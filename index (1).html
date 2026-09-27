@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omar Ruiz Álvarez | loose.market</title>
+  <meta name="description" content="Omar Ruiz Álvarez — marketing, creatividad y estrategias para negocios.">
+  <meta name="theme-color" content="#2F7CF6">
+  <style>
+    :root{
+      --cream:#F5F1E6; --blue:#2F7CF6; --sky:#55B7FF; --ink:#0B0F19;
+      --white:#fff; --black:#050608; --glass:rgba(255,255,255,.72);
+      --border:rgba(47,124,246,.18); --shadow:0 20px 60px rgba(11,15,25,.12);
+      --radius:26px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);
+      background:
+        radial-gradient(900px 500px at 5% 0%,rgba(85,183,255,.18),transparent 60%),
+        radial-gradient(800px 500px at 95% 15%,rgba(47,124,246,.14),transparent 60%),var(--cream);}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,92vw);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(245,241,230,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:950;letter-spacing:-.03em;font-size:20px;display:flex;align-items:center;gap:10px}
+    .brandMark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--sky));box-shadow:0 10px 28px rgba(47,124,246,.3)}
+    .links{display:flex;gap:6px;flex-wrap:wrap}.links a{padding:9px 11px;border-radius:12px;font-size:13px;font-weight:800}
+    .links a:hover{background:rgba(47,124,246,.08)}
+    .hero{padding:76px 0 34px}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:24px;align-items:stretch}
+    .panel{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border-radius:999px;background:rgba(47,124,246,.08);border:1px solid var(--border);font-size:12px;font-weight:950}
+    .dot{width:9px;height:9px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));box-shadow:0 0 0 5px rgba(47,124,246,.1)}
+    h1{font-size:clamp(40px,6vw,72px);line-height:.98;letter-spacing:-.055em;margin:20px 0 18px}
+    .gradient{background:linear-gradient(135deg,var(--blue),#1670ff,var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:17px;line-height:1.7;color:rgba(11,15,25,.76);max-width:62ch}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 17px;border-radius:15px;font-weight:900;font-size:14px;border:1px solid var(--border);transition:.2s}
+    .btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;box-shadow:0 14px 32px rgba(47,124,246,.25)}
+    .heroImage{padding:14px;background:var(--black);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+    .heroImage img{width:100%;height:100%;min-height:390px;object-fit:contain;border-radius:20px;background:#fff}
+    .imageNote{color:#fff;padding:13px 6px 2px;font-size:12px;font-weight:800;opacity:.82}
+    section{padding:34px 0}.sectionHead{margin-bottom:16px}.sectionHead h2{font-size:32px;letter-spacing:-.035em;margin:0 0 7px}.sectionHead p{margin:0;color:rgba(11,15,25,.65)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:rgba(255,255,255,.62);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 10px;font-size:20px}.card p{line-height:1.75;color:rgba(11,15,25,.75)}
+    .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.chip{padding:9px 11px;border-radius:999px;background:rgba(47,124,246,.07);border:1px solid var(--border);font-weight:850;font-size:12px}
+    .brandCard{background:linear-gradient(135deg,#050608,#101827);color:#fff;border:0;position:relative;overflow:hidden}.brandCard:after{content:"";position:absolute;width:300px;height:300px;right:-130px;top:-140px;border-radius:50%;background:radial-gradient(circle,var(--sky),transparent 65%);opacity:.55}
+    .brandCard>*{position:relative;z-index:1}.ig{color:#fff;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.07)}
+    .promo{display:block;overflow:hidden;border-radius:20px;border:1px solid var(--border);background:#000}.promo img{display:block;width:100%;height:340px;object-fit:cover;transition:.3s}.promo:hover img{transform:scale(1.025)}
+    .promoCaption{padding:14px 16px;background:#080a0e;color:#fff;display:flex;justify-content:space-between;align-items:center;font-weight:900}
+    .payment{display:grid;gap:12px}.field{padding:15px;border-radius:17px;background:rgba(47,124,246,.06);border:1px solid var(--border)}
+    .label{font-size:12px;font-weight:900;opacity:.62;margin-bottom:6px}.value{font-family:ui-monospace,monospace;font-size:15px;font-weight:900;word-break:break-all}
+    .copy{margin-top:9px;border:1px solid var(--border);background:#fff;padding:9px 11px;border-radius:11px;font-weight:900;cursor:pointer}
+    footer{padding:35px 0 55px;text-align:center;color:rgba(11,15,25,.55);font-size:12px;font-weight:750}
+    @media(max-width:850px){.heroGrid,.grid2{grid-template-columns:1fr}.hero{padding-top:44px}.heroImage img{min-height:280px}.links{display:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio"><span class="brandMark"></span>loose.market</a>
+    <nav class="links">
+      <a href="#sobre">Sobre mí</a><a href="#servicios">Servicios</a><a href="#instagram">Instagram</a><a href="#contacto">Contacto</a><a href="#pago">Pago</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="container hero">
+    <div class="heroGrid">
+      <div class="panel">
+        <span class="eyebrow"><span class="dot"></span> MARKETING · CHIAPAS</span>
+        <h1>Haz que tu negocio <span class="gradient">se vea.</span></h1>
+        <p class="lead">Hola, soy <strong>Omar Ruiz Álvarez</strong>. Tengo más de dos años de experiencia en el mercado de la mercadotecnia y me enfoco en colores llamativos y en encontrar la mejor opción para tu negocio.</p>
+        <p class="lead">Tengo 19 años y resido en la capital de Chiapas.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/529618548032" target="_blank" rel="noopener">📲 Hablar por WhatsApp</a>
+          <a class="btn" href="#pago">💳 Ver datos de pago</a>
+        </div>
+      </div>
+      <div class="panel heroImage">
+        <img src="tortuga.jpg" alt="Imagen principal de loose.market">
+        <div class="imageNote">Identidad visual · creatividad · estrategia</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="sectionHead"><h2>Sobre mí</h2><p>Una presentación rápida para tus clientes.</p></div>
+      <div class="grid2">
+        <article class="card">
+          <h3>Omar Ruiz Álvarez 👋</h3>
+          <p>Tengo más de dos años de experiencia en el mercado de la mercadotecnia y me enfoco en colores llamativos y la mejor opción para tu negocio.</p>
+          <p>Tengo 19 años y resido en la capital de Chiapas.</p>
+          <div class="chips"><span class="chip">Marketing</span><span class="chip">Creatividad</span><span class="chip">Identidad visual</span><span class="chip">Chiapas</span></div>
+        </article>
+        <article class="card brandCard">
+          <h3>loose.market ✦</h3>
+          <p style="color:rgba(255,255,255,.76)">Un espacio para conectar estrategia, creatividad y presencia de marca.</p>
+          <a class="btn ig" href="https://instagram.com/loose.market" target="_blank" rel="noopener">📷 Ver @loose.market ↗</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="container">
+      <div class="sectionHead"><h2>¿Qué puedo aportar?</h2><p>Una presentación clara para convertir visitas en conversaciones.</p></div>
+      <div class="grid2">
+        <article class="card"><h3>🎨 Identidad y creatividad</h3><p>Enfoque visual con colores llamativos y propuestas pensadas para que tu negocio tenga una presencia reconocible.</p></article>
+        <article class="card"><h3>⚡ Estrategia de marketing</h3><p>Ideas y comunicación orientadas a las necesidades de tu negocio y de las personas a las que quieres llegar.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="instagram">
+    <div class="container">
+      <div class="sectionHead"><h2>Conoce loose.market</h2><p>La imagen funciona como acceso directo a Instagram.</p></div>
+      <a class="promo" href="https://instagram.com/loose.market" target="_blank" rel="noopener">
+        <img src="loose-market.jpg" alt="loose.market — abrir Instagram">
+        <div class="promoCaption"><span>@loose.market</span><span>ABRIR INSTAGRAM ↗</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <div class="sectionHead"><h2>Contacto</h2><p>El botón abre directamente una conversación.</p></div>
+      <div class="card">
+        <p>¿Tienes un proyecto o necesitas una propuesta para tu negocio? Escríbeme por WhatsApp.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/529618548032" target="_blank" rel="noopener">💬 WhatsApp · 961 854 8032</a>
+          <a class="btn" href="https://instagram.com/loose.market" target="_blank" rel="noopener">📷 Instagram · @loose.market</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pago">
+    <div class="container">
+      <div class="sectionHead"><h2>Transferencia</h2><p>Datos proporcionados para mostrar en el sitio.</p></div>
+      <div class="card">
+        <div class="payment">
+          <div class="field"><div class="label">CUENTA</div><div class="value" id="account">012 180 01554744367 0</div><button class="copy" id="copyBtn">Copiar cuenta</button></div>
+          <div class="field"><div class="label">¿YA REALIZASTE EL PAGO?</div><div class="value" style="font-family:inherit">Envíame tu comprobante por WhatsApp.</div></div>
+        </div>
+        <div class="actions"><a class="btn primary" href="https://wa.me/529618548032?text=Hola%20Omar%2C%20ya%20realic%C3%A9%20la%20transferencia.%20Te%20env%C3%ADo%20mi%20comprobante." target="_blank" rel="noopener">Enviar comprobante ↗</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Omar Ruiz Álvarez · loose.market</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("copyBtn").addEventListener("click", async () => {
+    const btn = document.getElementById("copyBtn");
+    try { await navigator.clipboard.writeText(document.getElementById("account").textContent); btn.textContent="¡Cuenta copiada! ✓"; }
+    catch { btn.textContent="Selecciona y copia manualmente"; }
+    setTimeout(()=>btn.textContent="Copiar cuenta",1800);
+  });
+</script>
+</body>
+</html>
