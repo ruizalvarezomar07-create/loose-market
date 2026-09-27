@@ -1,0 +1,1 @@
+Coloca tortuga.jpg y loose-market.jpg junto a index.html (en la raíz del proyecto).
